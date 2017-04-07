@@ -1,0 +1,19 @@
+markdown: kramdown
+kramdown:
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+
+name: fidgettoys
+url: fidgettoys.ru
+baseurl: ""
+
+web:
+  disqus: fidgettoys-ru
+  google: UA-55372257-4
+
+gems:
+  - jekyll-sitemap
+
+exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]

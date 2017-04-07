@@ -1,0 +1,47 @@
+---
+layout: default
+title: "Fidgettoys.ru"
+---
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 " style=" max-height: 600px;">
+      <div class=" well" style="padding: 12px; max-height: 600px;">
+        <p>На данный момент доступны следующие варианты оплаты: <b>картой</b> или с <b>кошелька</b> Яндекс.Деньги</p>
+        <p>При оплате взимается комиссия:<b> 2% при оплате с карты, 0,5% — из кошелька</b></p>
+        <p>Если хотите оплатить другим способом, то просто напишите <a href="http://localhost:4000/faq.html" title="Вопросы и ответы">по одному из имеющихся контактов</a>.</p>
+        <p>Вся информация касательно доставки вводится после нажатия кнопки <b>купить</b> (ФИО, email, Адрес доставки)</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    {% for item in site.data.items %}
+      <div class="item itm-l col-md-4 col-sm-6">
+        <div class="thumbnail">
+          <a href="{{site.baseurl}}/public/img/{{item.img}}" class="popup">
+            <img class="img-responsive" src="{{site.baseurl}}/public/img/{{item.img}}" alt="{{item.title}}">
+          </a>
+          <div class="caption-full">
+            <h4 class="pull-right">₽ <span class="cost cost-{{item.id}}">{{item.cost}}</span></h4>
+            <h4><a href="#">{{item.title}}</a></h4>
+            {{item.description | markdownify }}
+          </div>
+          <div class="pb">
+            <p class="pull-right"><span class="qnt qnt-{{item.id}}">{{item.quantity}}</span> шт в наличии</p>
+            {% include paybtn.html %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-12">
+      <h4>Комментарии</h4>
+      {% include hc.html %}
+    </div>
+  </div>
+</div>
