@@ -9,12 +9,14 @@ var Item = {
         <div class="caption-full">
           <h4 class="pull-right">₽ <span class="cost">{{item.price}}</span></h4>
           <h4><a href="#">{{item.title}}</a></h4>
-          <div v-html="item.description"></div>
+          <div v-html="item.description" class="description"></div>
         </div>
         <div class="pb">
-          <p class="pull-right"><span class="qnt">{{item.quantity}}</span> шт в наличии</p>
           <iframe frameborder="0" allowtransparency="true" scrolling="no" :src="ym" width="107" height="25"></iframe>
           <iframe frameborder="0" allowtransparency="true" scrolling="no" :src="crd" width="107" height="25"></iframe>
+        </div>
+        <div class="qty">
+          <p>{{item.quantity}} шт в наличии</p>
         </div>
       </div>
     </div>
