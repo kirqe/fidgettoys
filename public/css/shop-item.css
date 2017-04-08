@@ -24,13 +24,18 @@ body {
 }
 
 .thumbnail .caption-full {
-    padding: 9px;
-    color: #333;
+  padding: 9px;
+  color: #333;
+}
+
+
+.item:nth-child(4) {
+  clear: both;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .item:nth-child(3) {
-    clear: left;
+  .item:nth-child(4) {
+    clear: right;
   }
 }
 

@@ -6,17 +6,8 @@ title: "Fidgettoys.ru"
 
 
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12 " style=" max-height: 600px;">
-      <div class=" well" style="padding: 12px; max-height: 600px;">
-        <p>На данный момент доступны следующие варианты оплаты: <b>картой</b> или с <b>кошелька</b> Яндекс.Деньги</p>
-        <p>При оплате взимается комиссия:<b> 2% при оплате с карты, 0,5% — из кошелька</b></p>
-        <p>Если хотите оплатить другим способом, то просто напишите <a href="http://localhost:4000/faq.html" title="Вопросы и ответы">по одному из имеющихся контактов</a>.</p>
-        <p>Вся информация касательно доставки вводится после нажатия кнопки <b>купить</b> (ФИО, email, Адрес доставки)</p>
-      </div>
-    </div>
-  </div>
-  <div class="row">
+
+  <div class="row items">
     {% for item in site.data.items %}
       <div class="item itm-l col-md-4 col-sm-6">
         <div class="thumbnail">
@@ -35,6 +26,17 @@ title: "Fidgettoys.ru"
         </div>
       </div>
     {% endfor %}
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 " style=" max-height: 600px;">
+      <div class=" well" style="padding: 12px; max-height: 600px;">
+        <p>На данный момент доступны следующие варианты оплаты: <b>картой</b> или с <b>кошелька</b> Яндекс.Деньги</p>
+        <p>При оплате взимается комиссия:<b> 2% при оплате с карты, 0,5% — из кошелька</b></p>
+        <p>Если хотите оплатить другим способом, то просто напишите <a href="http://localhost:4000/faq.html" title="Вопросы и ответы">по одному из имеющихся контактов</a>.</p>
+        <p>Вся информация касательно доставки вводится после нажатия кнопки <b>купить</b> (ФИО, email, Адрес доставки)</p>
+      </div>
+    </div>
   </div>
 
 
