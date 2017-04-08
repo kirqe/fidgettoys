@@ -4,28 +4,9 @@ title: "Fidgettoys.ru"
 ---
 
 
-
-<div class="container-fluid">
-
-  <div class="row items">
-    {% for item in site.data.items %}
-      <div class="item itm-l col-md-4 col-sm-6">
-        <div class="thumbnail">
-          <a href="{{site.baseurl}}/public/img/{{item.img}}" class="popup">
-            <img class="img-responsive" src="{{site.baseurl}}/public/img/{{item.img}}" alt="{{item.title}}">
-          </a>
-          <div class="caption-full">
-            <h4 class="pull-right">₽ <span class="cost cost-{{item.id}}">{{item.cost}}</span></h4>
-            <h4><a href="#">{{item.title}}</a></h4>
-            {{item.description | markdownify }}
-          </div>
-          <div class="pb">
-            <p class="pull-right"><span class="qnt qnt-{{item.id}}">{{item.quantity}}</span> шт в наличии</p>
-            {% include paybtn.html %}
-          </div>
-        </div>
-      </div>
-    {% endfor %}
+<div class="container-fluid" >
+  <div id="app">
+    <items></items>
   </div>
 
   <div class="row">
@@ -47,3 +28,8 @@ title: "Fidgettoys.ru"
     </div>
   </div>
 </div>
+
+<script>
+
+
+</script>
