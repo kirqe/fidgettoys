@@ -1,0 +1,90 @@
+---
+---
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+.pb {
+  padding-right: 10px;
+  padding-left: 10px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.qty {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  color: #d17581;
+}
+
+.thumbnail {
+  padding: 0;
+  min-height: 450px;
+  position: relative;
+}
+
+.thumbnail .caption-full {
+  padding: 9px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.item:nth-child(4) {
+  clear: both;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .item:nth-child(4) {
+    clear: right;
+  }
+}
+
+.sold{
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+footer {
+  margin: 50px 0;
+}
+
+[v-clock] {
+  display: none;
+}
+
+.post-item {
+  font-family: 'Roboto', sans-serif;
+  a {
+    color: #393E40;
+  }
+
+  span.date {
+    font-size: 14px;
+    color: #8E9696;
+  }
+}
+
+.post-content {
+  font-family: 'Roboto', sans-serif;
+  .title {
+    color: #393E40;
+  }
+  .date {
+    color: #8E9696;
+    margin-bottom: 15px;
+  }
+  .content {
+    font-size: 16px;
+    img {
+
+    }
+  }
+}

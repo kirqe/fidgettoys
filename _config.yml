@@ -1,0 +1,25 @@
+name: fidgettoys
+url: http://fidgettoys.ru
+baseurl: ""
+permalink: /posts/:title.html
+
+web:
+  disqus: fidgettoys-ru
+  google: UA-55372257-4
+
+meta:
+  description: "Изготовление и продажа спиннеров ручной работы. Доставка по России."
+  keywords: "спиннер, спиннер купить, хенд спиннер, fidgetspinners, fidgettoys, handspinners, hand spinner, fidgettoys.ru"
+
+markdown: kramdown
+
+kramdown:
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+
+gems:
+  - jekyll-sitemap
+
+exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]

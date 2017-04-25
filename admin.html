@@ -1,0 +1,32 @@
+---
+permalink: '/admin'
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ft local admin</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/admin.css" type="text/css" />
+    <script type="text/javascript" src="{{ site.baseurl }}/public/js/jquery.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/public/js/bootstrap.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/public/js/vue.min.js"></script>
+    <script src="{{ site.baseurl }}/public/js/firebase.js"></script>
+    <script src="{{ site.baseurl }}/public/js/vuefire.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/public/js/admin.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>{{site.name}} admin / <span style="font-size: 13px;"><a href="/">Главная</a></h3>
+          <hr/>
+          <div id="admin">
+            <dash></dash>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

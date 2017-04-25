@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin
+Disallow: /cp.html
+Disallow: /404.html
+
+Host: fidgettoys.ru
+Sitemap: http://fidgettoys.ru/sitemap.xml

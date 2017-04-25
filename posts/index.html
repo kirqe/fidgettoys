@@ -1,0 +1,21 @@
+---
+
+layout: page
+title: "Статьи"
+meta:
+  description: "Fidgettoys.ru - статьи"
+  keywords: "спиннер, спиннер купить, хенд спиннер, fidgetspinners, fidgettoys, handspinners, hand spinner, fidgettoys.ru"
+---
+
+<section class="content">
+
+    {% for post in site.posts %}
+    <h3 class="post-item">
+      <a href="{{ post.url }}">{{ post.title }}</a> <span class="date">{{ post.date | date: "%e.%m.%Y" }}</span>
+    </h3>
+      {% unless post.draft %}
+
+      {% endunless %}
+    {% endfor %}
+
+</section>
