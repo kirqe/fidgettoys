@@ -18,3 +18,11 @@
 <script type="text/javascript" src="{{ site.baseurl }}/public/js/bootstrap.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/public/js/jquery.magnific-popup.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/public/js/app.js"></script>
+
+<script>
+$(document).ready(function() {
+  $("#info-close").click(function(){
+    $(this).closest("#info").remove()
+  })
+})
+</script>
