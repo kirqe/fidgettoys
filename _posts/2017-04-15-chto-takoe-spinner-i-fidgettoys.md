@@ -22,7 +22,6 @@ meta:
 
 Остальные примеры [фиджетов][fidgettoys] на фото ниже
 
-
 <div style="margin: 0 auto; display: block; width: 50%;">
   <img src="http://i.imgur.com/QwfvINH.jpg"/>
 </div>
